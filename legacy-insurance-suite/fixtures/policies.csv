@@ -1,0 +1,6 @@
+policy_id,policy_number,insured_name,coverage_amount,premium,state,effective_date,status
+1,POL-10001,John Smith,100000,250.00,CA,2020-01-15,ACTIVE
+2,POL-10002,Jane Doe,250000,625.00,NY,2020-02-01,ACTIVE
+3,POL-10003,Bob Johnson,50000,125.00,TX,2019-06-15,RENEWED
+4,POL-10004,Alice Williams,750000,1875.00,FL,2020-03-10,ACTIVE
+5,POL-10005,Charlie Brown,150000,375.00,IL,2019-11-20,EXPIRED

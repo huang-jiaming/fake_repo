@@ -1,0 +1,12 @@
+# Legacy Insurance Suite
+*.pyc
+__pycache__/
+*.log
+.env
+*.sql
+node_modules/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/

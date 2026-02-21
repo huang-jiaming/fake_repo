@@ -1,0 +1,23 @@
+{
+  "name": "legacy-insurance-suite",
+  "version": "2.4.1",
+  "description": "FICTIONAL DEMO - Legacy insurance system. Do not use in production.",
+  "scripts": {
+    "test": "mocha test/*.js",
+    "start": "node integrations/payment_gateway.js",
+    "lint": "jshint .",
+    "build": "grunt build"
+  },
+  "dependencies": {
+    "request": "2.69.0",
+    "lodash": "3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "2.3.4",
+    "jshint": "2.9.1",
+    "grunt": "0.4.5"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

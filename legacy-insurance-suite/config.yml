@@ -1,0 +1,19 @@
+# Legacy Insurance Suite - YAML Config (newer format, not fully adopted)
+# FICTIONAL DEMO - Do not use in production
+
+database:
+  host: localhost
+  port: 3306
+  database: insurance_db
+
+services:
+  policy_admin:
+    port: 5000
+  claims:
+    port: 5001
+  billing:
+    port: 5002
+
+batch:
+  output_dir: /var/reports/insurance
+  retention_days: 90

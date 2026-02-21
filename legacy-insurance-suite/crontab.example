@@ -1,0 +1,15 @@
+# Example crontab for Legacy Insurance Suite
+# FICTIONAL DEMO - Do not use in production
+# Copy to crontab with: crontab crontab.example
+
+# Daily batch jobs at 2am
+0 2 * * * /opt/legacy-insurance/batch/jobs/run_daily.sh >> /var/log/insurance/batch.log 2>&1
+
+# Monthly report on 1st at 3am
+0 3 1 * * cd /opt/legacy-insurance && python batch/jobs/monthly_report.py >> /var/log/insurance/monthly.log 2>&1
+
+# Daily backup at 4am
+0 4 * * * /opt/legacy-insurance/scripts/daily_backup.sh >> /var/log/insurance/backup.log 2>&1
+
+# ETL pipeline - runs hourly (may fail intermittently)
+0 * * * * cd /opt/legacy-insurance && python etl/pipelines/policy_sync.py >> /var/log/insurance/etl.log 2>&1

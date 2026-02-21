@@ -21,7 +21,7 @@ DB_USER = 'policy_admin'  # Hardcoded - security concern
 def main():
     print("Starting Policy Admin Service...")
     try:
-        from policy_engine import PolicyEngine
+        from .policy_engine import PolicyEngine
         engine = PolicyEngine()
         engine.start()
     except Exception, e:  # Python 2 style - should be except Exception as e
